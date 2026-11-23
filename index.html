@@ -41,7 +41,18 @@
 </main></div>
 <!-- ===== بنر تبلیغاتی پایین (فقط یک کد بنر در slot قرار دهید) ===== -->
 <div id="adly-banner-bottom" role="complementary" aria-label="تبلیغات">
-  <div class="banner-slot" id="banner-slot" data-banner-ready="false">slider banner 320x50</div>
+  <div class="banner-slot" id="banner-slot" data-banner-ready="false">
+  <div id="adly-container"></div>
+  <script src="https://myadino.ir/widget/adly-widget.js"></script>
+  <script>
+    AdlyWidget.init({
+      apiKey: 'secret-abe2eabd',
+      containerId: 'adly-container',
+      barnamk: 'neon_game_app',
+      appRef: 175
+    });
+  </script>
+</div>
 </div>
 
 <script>
